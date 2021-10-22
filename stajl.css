@@ -1,0 +1,7 @@
+td {
+    border-top: 1.5pt ridge orange;
+    border-bottom: 1.5pt ridge orange;
+    border-left: 1.5pt ridge orange;
+    border-right: 1.5pt ridge orange;
+    padding:2px;
+}
