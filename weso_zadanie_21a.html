@@ -1,0 +1,43 @@
+
+<html>
+	<body>
+		<div style="color:red;font-size:50px;">
+			<script language="JavaScript">
+				var b_wes = parseFloat(prompt("podaj b=", ""));
+				var c_wes = parseFloat(prompt("podaj c=", ""));
+				var sinalfa;
+				var cosalfa;
+				var tgalfa;
+				var ctgalfa;
+				
+				var a_wes;
+				a_wes=Math.sqrt((Math.pow(c_wes,2))-(Math.pow(b_wes,2)));
+				
+				var pole=(a_wes*b_wes)/2;
+				var h1=a_wes;
+				var h2=b_wes;
+				var h3=(a_wes*b_wes)/c_wes;
+				
+				sinalfa=a_wes/c_wes;
+				cosalfa=b_wes/c_wes;
+				tgalfa=a_wes/b_wes;
+				ctgalfa=b_wes/a_wes;
+				
+				var alfa=Math.sin(a_wes/c_wes)*180/Math.PI;
+				var beta=90-alfa;
+				
+				document.write("trzeci bok (a)="+a_wes.toFixed(3)+"<br>");
+				document.write("pole ="+pole.toFixed(3)+"[j]<sup>2</sup><br>");
+				document.write("h1 ="+h1.toFixed(3)+"<br>");
+				document.write("h2 ="+h2.toFixed(3)+"<br>");
+				document.write("h3 ="+h3.toFixed(3)+"<br>");
+				document.write("sin(alfa)="+sinalfa.toFixed(3)+"<br>");
+				document.write("cos(alfa)="+cosalfa.toFixed(3)+"<br>");
+				document.write("tg(alfa)="+tgalfa.toFixed(3)+"<br>");
+				document.write("ctg(alfa)="+ctgalfa.toFixed(3)+"<br>");
+				document.write("kąt alfa ="+alfa.toFixed(3)+" <sup>o</sup><br>");
+				document.write("kąt beta ="+beta.toFixed(3)+" <sup>o</sup><br>");
+			</script>
+		</div>
+	</body>
+</html>
